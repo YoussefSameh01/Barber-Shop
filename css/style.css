@@ -1,0 +1,1203 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+/* Start variables */
+:root {
+  --main-color: #d6a354;
+}
+
+/* End variables */
+/* Start global rules*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+  font-family: "Unbounded", cursive;
+  scroll-behavior: smooth;
+}
+
+/* End global rules*/
+/* Start header */
+header {
+  background-color: var(--main-color);
+  height: 100vh;
+  width: 12.5rem;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.logo img {
+  width: 10.625rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 4vh 2.5rem;
+  font-weight: 600;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  position: relative;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+.close {
+  position: absolute;
+  right: 0.9375rem;
+  top: 0.9375rem;
+  color: rgb(59, 59, 59);
+  display: none;
+}
+
+.checkbox {
+  display: none;
+}
+
+/* End header */
+/* Start main */
+main {
+  padding-left: 12.5rem;
+}
+
+/* Start landing section */
+.bg-img {
+  background-image: url("../images/haircutting2.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center -1.25rem;
+}
+
+.landing-sec {
+  height: 41.47875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(214, 163, 84, 0.8)), to(rgba(34, 193, 195, 0.8)));
+  background-image: linear-gradient(to right, rgba(214, 163, 84, 0.8), rgba(34, 193, 195, 0.8));
+  border-bottom: 0.9375rem solid var(--main-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.hamburger-nav i {
+  position: fixed;
+  z-index: 10000;
+  color: white;
+  margin: 0.9375rem 0 0 0.9375rem;
+  padding: 0.8125rem 0.875rem;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  display: none;
+}
+
+.landing-sec .title {
+  padding-left: 3.75rem;
+}
+
+.landing-sec .title h1 {
+  color: white;
+  font-size: 4.5rem;
+}
+
+.landing-sec .title p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 1.875rem 0;
+}
+
+.landing-sec .title a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6.25rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.landing-sec .title a:first-of-type {
+  border: 0.125rem solid white;
+  margin-right: 0.625rem;
+}
+
+.landing-sec .title a:last-of-type {
+  background-color: #c12828;
+}
+
+.landing-sec .title a:hover {
+  border-color: transparent;
+  background-color: #FDBB2D;
+}
+
+.for-position {
+  position: absolute;
+  right: -7%;
+  bottom: -10%;
+}
+
+.sec-title {
+  width: 21.875rem;
+  height: 21.875rem;
+  border: 0.625rem solid var(--main-color);
+  border-radius: 50%;
+  position: relative;
+}
+
+.sec-title .img img {
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 0.625rem solid var(--main-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.sec-title .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.sec-title .info h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin: -0.625rem 0 1.25rem 3.75rem;
+}
+
+.sec-title .info a {
+  text-decoration: none;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  background-color: var(--main-color);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 6.25rem;
+  font-weight: 700;
+  margin-left: 5rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.sec-title .info a:hover {
+  background-color: #c12828;
+}
+
+/* End landing section */
+/* Start our-story section */
+.our-story .info {
+  padding: 6.25rem 3.75rem 0;
+}
+
+.our-story .info h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5625rem;
+}
+
+.our-story .info p {
+  font-size: 1.3rem;
+  color: #717275;
+  font-weight: 300;
+}
+
+hr {
+  margin: 2.5rem 3.75rem;
+  opacity: 0.4;
+}
+
+.barbers {
+  padding: 0 3.75rem 0 3.75rem;
+  margin-bottom: 6.25rem;
+}
+
+.barbers h2 {
+  color: #c12828;
+  margin-bottom: 3.125rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.first-barber,
+.sec-barber {
+  width: 21.25rem;
+  height: 13.75rem;
+  background-color: var(--main-color);
+  border-radius: 1.25rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.first-barber {
+  margin-left: 4rem;
+}
+
+.sec-barber {
+  margin-right: 4rem;
+}
+
+.sec-barber .img {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/barber2.jpg");
+  background-size: cover;
+  background-position: center -4.0625rem;
+  border-radius: 1.25rem;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+  position: relative;
+}
+
+.first-barber .img {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/barber1.jpg");
+  background-size: cover;
+  border-radius: 1.25rem;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+  position: relative;
+}
+
+.info-barber {
+  height: 3.4375rem;
+  width: 15.625rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: translatex(-50%) rotate(-7deg);
+          transform: translatex(-50%) rotate(-7deg);
+  border-radius: 6.25rem;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  padding: 0 1.25rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.info-barber p {
+  color: #717275;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.info-barber .logo a {
+  border-radius: 50%;
+  background-color: #c12828;
+  color: white;
+  font-size: 0.9rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  margin-right: 0.6rem;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex > div:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 196, 0, 0.8)), to(rgba(34, 193, 195, 0.8)));
+  background-image: linear-gradient(to right, rgba(255, 196, 0, 0.8), rgba(34, 193, 195, 0.8));
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.flex > div:hover .info-barber {
+  -webkit-transform: translate(-50%, -10px) rotate(-7deg) scale(1);
+          transform: translate(-50%, -10px) rotate(-7deg) scale(1);
+}
+
+.info-barber .logo a:hover {
+  background-color: var(--main-color);
+}
+
+.sec-bg-img {
+  background-image: url("../images/barbershop.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 0rem;
+}
+
+.discount {
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 26.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.discount h2 {
+  color: #c12828;
+  font-size: 3rem;
+  margin-bottom: 1.5625rem;
+}
+
+.discount p:first-of-type {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.5625rem;
+}
+
+.discount p:last-child {
+  background-color: var(--main-color);
+  padding: 0.8125rem 1.0625rem;
+  border-radius: 6.25rem;
+  font-weight: 800;
+  color: rgb(41, 41, 41);
+}
+
+/* End our-story section */
+/* Start services section */
+.services h2 {
+  padding: 6.25rem 0 0 3.75rem;
+  margin-bottom: 3.125rem;
+  font-size: 3rem;
+}
+
+.serv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services .container-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 51.5625rem;
+}
+
+.services .container {
+  width: 25rem;
+  height: 16.875rem;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  position: relative;
+  margin-bottom: 1.5625rem;
+}
+
+.services .container img {
+  border-radius: 1.25rem;
+  width: 100%;
+  height: 100%;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.services .container .sub-div {
+  position: absolute;
+  width: 21.875rem;
+  height: 14.375rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 0.0625rem solid white;
+  border-radius: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10.8125rem 1.6875rem 1.6875rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 999;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.services .container .sub-div p:first-child {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.services .container .sub-div p:last-child {
+  padding: 0.4375rem;
+  background-color: var(--main-color);
+  border-radius: 6.25rem;
+  font-weight: 700;
+  color: rgb(33, 33, 33);
+  font-size: 0.9rem;
+}
+
+.services .container:hover img {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+.services .container:hover .sub-div {
+  border: 5px solid var(--main-color);
+}
+
+.book-a-seat {
+  margin-top: 4.6875rem;
+  height: 56.25rem;
+  background-image: url("../images/shavingchair.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.alpha-channel {
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.book-a-seat .bg {
+  width: 42.5rem;
+  height: 40.625rem;
+  background-color: white;
+  text-align: center;
+  padding: 2.8125rem;
+  border-radius: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.book-a-seat .bg h2 {
+  font-size: 2.9rem;
+  margin-bottom: 0.4375rem;
+  padding-left: 0rem;
+  padding-top: 0;
+}
+
+.book-a-seat .bg p {
+  color: rgb(101, 101, 101);
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.book-a-seat .bg form > *:not(input:last-child) {
+  height: 3.125rem;
+  padding: 0.625rem;
+  margin-bottom: 1.5625rem;
+  width: 15.625rem;
+  border-radius: 0.4375rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  font-size: 1.03rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-text-fill-color: gray;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+          box-shadow: 0 0 0 30px white inset !important;
+}
+
+textarea {
+  width: 32.8125rem !important;
+  height: 5.625rem !important;
+}
+
+::-webkit-input-placeholder {
+  font-weight: 500;
+}
+
+::-moz-placeholder {
+  font-weight: 500;
+}
+
+:-ms-input-placeholder {
+  font-weight: 500;
+}
+
+::-ms-input-placeholder {
+  font-weight: 500;
+}
+
+::placeholder {
+  font-weight: 500;
+}
+
+form input:last-child {
+  background-color: #c12828;
+  color: white;
+  padding: 1.0625rem 3.125rem;
+  border-radius: 1.875rem;
+  border-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+form input:last-child:hover {
+  background-color: #FDBB2D;
+}
+
+form > *:focus {
+  outline: 0.2188rem solid lightblue;
+  -webkit-transition-duration: 0.05s !important;
+          transition-duration: 0.05s !important;
+}
+
+/* End services section */
+/* Start price list section */
+.price-list {
+  padding: 6.25rem 3.75rem 0;
+  margin-bottom: 6.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-list .informations {
+  width: 31.25rem;
+}
+
+.price-list .informations h2 {
+  font-size: 3rem;
+  margin-bottom: 0.4375rem;
+}
+
+.price-list .informations .title-p {
+  margin-bottom: 1.5625rem;
+  font-weight: 700;
+}
+
+.price-list .names-prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-list .names-prices .names p span {
+  margin-left: 0.9375rem;
+  background-color: rgb(110, 110, 110);
+  height: 0.125rem;
+  width: 62.5rem;
+  display: inline-block;
+}
+
+.price-list .names-prices .prices {
+  width: 4.1406rem;
+  margin-left: 0.9375rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.price-list .names-prices .prices p {
+  margin-bottom: 0.4375rem;
+}
+
+.price-list .names-prices .names {
+  width: calc(100% - 5.0781rem);
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.price-list .names-prices .names p {
+  margin-bottom: 0.4375rem;
+}
+
+.price-list .card {
+  width: 17.5rem;
+  height: 18.4375rem;
+  background-color: var(--main-color);
+  border-radius: 1.25rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.price-list .card .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+  background-image: url("../images/shavingchair.jpg");
+  background-size: cover;
+  background-position: -5.3125rem;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+.price-list .card:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 196, 0, 0.8)), to(rgba(34, 193, 195, 0.8)));
+  background-image: linear-gradient(to right, rgba(255, 196, 0, 0.8), rgba(34, 193, 195, 0.8));
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+/* End price list section */
+/* End main */
+/* Start footer */
+footer {
+  padding: 0 3.75rem 0 16.25rem;
+  margin-top: 6.25rem;
+}
+
+footer .contact .contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.9375rem;
+}
+
+footer .contact .contact-info .info {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 0.625rem;
+  display: inline-block;
+}
+
+footer .contact .contact-info .logo a {
+  border-radius: 50%;
+  background-color: #c12828;
+  color: white;
+  font-size: 0.9rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  margin-right: 0.6rem;
+}
+
+footer .contact .contact-info .logo a:hover {
+  background-color: var(--main-color);
+}
+
+footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 6.25rem;
+  padding-right: 3.125rem;
+}
+
+footer .contact .background {
+  width: 21.875rem;
+  height: 12.5rem;
+  background-color: var(--main-color);
+  border-radius: 1.25rem;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+footer .contact .background .date {
+  width: 100%;
+  height: 100%;
+  background-color: #c12828;
+  border-radius: 1.25rem;
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+footer .contact .background .date .date-info {
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg);
+  padding: 1.25rem 0 0 2.1875rem;
+}
+
+footer .contact .background .date .date-info i {
+  padding: 0.9375rem;
+  background-color: var(--main-color);
+  border-radius: 6.25rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.0625rem;
+}
+
+footer .contact .background .date .date-info p {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+}
+
+footer .contact .background .date .date-info p:last-of-type {
+  color: black;
+}
+
+footer .contact .background:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 196, 0, 0.8)), to(rgba(34, 193, 195, 0.8)));
+  background-image: linear-gradient(to right, rgba(255, 196, 0, 0.8), rgba(34, 193, 195, 0.8));
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.map iframe {
+  width: 100%;
+  border-radius: 1.25rem;
+  margin-bottom: 6.25rem;
+}
+
+.our-branches h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1.25rem;
+}
+
+.our-branches .branches .branche {
+  max-width: 15.625rem;
+}
+
+.our-branches .branches {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3.75rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.our-branches .branches h3 {
+  color: #c12828;
+  font-size: 1rem;
+}
+
+.our-branches .branches p {
+  font-size: 1.2rem;
+  color: #717275;
+  font-weight: 300;
+}
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 6.25rem;
+  margin-bottom: 4.375rem;
+}
+
+.copyright p {
+  color: #717275;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.copyright i {
+  padding: 0.5rem 0.6875rem;
+  border: 0.2188rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: var(--main-color);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.copyright a i:hover {
+  color: #c12828;
+  border-color: #c12828;
+}
+
+.end {
+  padding-left: 12.5rem;
+  height: 0.8125rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 196, 0, 0.8)), to(rgba(34, 193, 195, 0.8)));
+  background-image: linear-gradient(to right, rgba(255, 196, 0, 0.8), rgba(34, 193, 195, 0.8));
+}
+
+/* End footer */
+@media (max-width: 1022px) {
+  :root {
+    font-size: 10px;
+  }
+  .bg-img {
+    background-position: center;
+  }
+  .sec-title {
+    display: none;
+  }
+  .landing-sec .title {
+    padding-right: 3.75rem;
+  }
+  .landing-sec .title p {
+    font-size: 1.25rem;
+  }
+  .landing-sec {
+    height: 102vh;
+  }
+  .our-story .info h2 {
+    font-size: 2.1rem;
+  }
+  .first-barber {
+    margin: 0 auto 3rem;
+    width: 23.25rem;
+    height: 15.75rem;
+  }
+  .sec-barber {
+    margin: auto;
+    width: 23.25rem;
+    height: 15.75rem;
+  }
+  .barbers h2 {
+    font-size: 1.5rem;
+  }
+  .info-barber .logo a {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .discount h2 {
+    font-size: 2.7rem;
+  }
+  .services .container {
+    margin: auto;
+  }
+  .services .container:not(.container:last-child) {
+    margin-bottom: 3rem;
+  }
+  .services .container {
+    width: 28rem;
+    height: 19.875rem;
+  }
+  .services .container .sub-div {
+    width: 23.875rem;
+    height: 16.375rem;
+    padding: 11.4rem 1.1rem 1.1rem;
+  }
+  .book-a-seat .bg {
+    width: 30rem;
+    height: auto;
+  }
+  .book-a-seat .bg form > *:not(input:last-child) {
+    width: 100%;
+  }
+  textarea {
+    width: 100% !important;
+  }
+  form {
+    width: 100%;
+  }
+  .book-a-seat {
+    height: 61rem;
+    background-position: center;
+  }
+  .alpha-channel {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .price-list .informations {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .price-list .names-prices .prices {
+    margin-right: 1.875rem;
+  }
+  .price-list .card {
+    margin: auto;
+    width: 18.5rem;
+    height: 19.4375rem;
+  }
+  hr {
+    opacity: 0.5;
+  }
+  footer .contact {
+    padding-right: 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .contact .contact-info {
+    margin: 0 auto 3rem auto;
+    text-align: center;
+  }
+  .logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .contact .contact-info .logo a {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+  footer .contact .contact-info .logo a i {
+    font-size: 1.2rem;
+  }
+  footer .contact .contact-info h2 {
+    font-size: 1.7rem;
+  }
+  footer .contact .contact-info .info {
+    font-size: 1.4rem;
+  }
+  footer .contact .background {
+    margin: auto;
+    width: 23.875rem;
+    height: 14.5rem;
+  }
+  .our-branches h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1.7rem;
+  }
+  .our-branches .branches .branche {
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+  }
+  .our-branches .branches p {
+    max-width: 15rem;
+  }
+  .copyright {
+    padding-right: 0rem;
+  }
+
+  .bg-img,
+  .sec-bg-img,
+  .book-a-seat {
+    background-attachment: scroll;
+  }
+}
+@media (max-width: 300px) {
+  :root {
+    font-size: 9px;
+  }
+}
+@media (min-width: 451px) {
+  :root {
+    font-size: 11px;
+  }
+}
+@media (min-width: 551px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media (min-width: 651px) {
+  :root {
+    font-size: 13px;
+  }
+}
+@media (min-width: 751px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media (min-width: 851px) {
+  :root {
+    font-size: 15px;
+  }
+}
+@media (min-width: 951px) and (max-width: 1022px) {
+  :root {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1100px) {
+  .first-barber {
+    margin-left: 1.5rem;
+  }
+  .sec-barber {
+    margin-right: 1.5rem;
+  }
+  .services .container {
+    width: 22rem;
+    height: 13.875rem;
+  }
+  .services .container .sub-div {
+    width: 17.875rem;
+    height: 10.375rem;
+    padding: 10rem 1.9rem 1.9rem;
+  }
+  .services .container .sub-div p:first-child {
+    font-size: 1.45rem !important;
+  }
+  .services .container .sub-div p:last-child {
+    font-size: 0.8rem;
+  }
+  .services .container-flex {
+    width: 683.438px;
+  }
+  .price-list .informations {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .price-list .names-prices .prices {
+    margin-right: 1.875rem;
+  }
+  .price-list .card {
+    margin: auto;
+    width: 18.5rem;
+    height: 19.4375rem;
+  }
+  .our-branches .branches .branche {
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+  }
+}
+@media (min-width: 1301px) and (max-width: 1499px) {
+  .first-barber {
+    margin-left: 10rem;
+  }
+  .sec-barber {
+    margin-right: 10rem;
+  }
+}
+@media (min-width: 1500px) {
+  :root {
+    font-size: 20px;
+  }
+}
+@media (min-width: 2000px) {
+  :root {
+    font-size: 25px;
+  }
+}
+/* Humburger-nav & Overflow */
+@media (max-width: 1022px) {
+  :root,
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    -webkit-transform: translate(-12.5rem);
+            transform: translate(-12.5rem);
+    z-index: 99999;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    opacity: 0.9;
+  }
+  main {
+    padding-left: 0rem;
+  }
+  footer {
+    padding-left: 3.75rem;
+  }
+  .hamburger-nav i {
+    display: block;
+  }
+  .close {
+    display: block;
+  }
+  .checkbox:checked ~ header {
+    -webkit-transform: translate(0rem);
+            transform: translate(0rem);
+  }
+}

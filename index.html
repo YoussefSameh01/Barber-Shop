@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our philosophy is not only to provide the best possible hair cut and shaving services,
+    but to create a welcoming environment."/>
+    <meta name="author" content="youssef"/>
+    <meta name="keywords" content="barbershop, haircut, trimming, barbers"/>
+    <title>Barber Shop</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- Start fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- End fontawesome link -->
+</head>
+<body>
+    <!-- Start header -->
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <header>
+        <div class="close">
+            <label for="checkbox"><i class="fa-solid fa-x"></i></label>
+        </div>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo"/>
+        </div>
+        <nav>
+            <a href="#home">home</a>
+            <a href="#our-story">our story</a>
+            <a href="#services">services</a>
+            <a href="#price-list">price list</a>
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+    <!-- End header -->
+
+    <!-- Start main -->
+    <main>
+        <!-- Start landing section -->
+        <div class="hamburger-nav">
+            <label for="checkbox"><i class="fa-solid fa-bars"></i></label>
+        </div>
+        <div class="bg-img">
+            <section class="landing-sec" id="home">
+                <div class="title">
+                    <h1>Barber<br/><i>Shop</i></h1>
+                    <p>Get the most professional haircut for you</p>
+                    <a href="#our-story">About Us</a>
+                    <a href="#services">What we do</a>
+                </div>
+                <div class="for-position">
+                    <div class="sec-title">
+                        <div class="img">
+                            <img src="images/shavingchair.jpg" alt="sec-title-img"/>
+                        </div>
+                        <div class="info">
+                            <h2>Hurry Up!<br/>Get good<br/>haircut.</h2>
+                            <a href="#book-a-seat"><i>Book a seat</i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- End landing section -->
+
+        <!-- Start our-story section -->
+        <section class="our-story">
+            <section class="info" id="our-story">
+                <h2>Best hairdressers</h2>
+                <p>
+                    We have one of the top hairdressers in the world
+                    that have participated in international competitions
+                    and received many awards around the world.
+                </p>
+            </section>
+            <hr/>
+            <section class="barbers">
+                <h2>Meet Barbers</h2>
+                <div class="flex">
+                    <div class="first-barber">
+                        <div class="img"> 
+                            <div class="info-barber">
+                                <p>Redo</p>
+                                <div class="logo">
+                                    <a href="#home"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#home"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#home"><i class="fa-brands fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-barber">
+                        <div class="img">
+                            <div class="info-barber">
+                                <p>Sam</p>
+                                <div class="logo">
+                                    <a href="#home"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#home"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="sec-bg-img">
+                <section class="discount">
+                    <h2>Get 32% Discount</h2>
+                    <p>on every second week of the month</p>
+                    <p>Promo Code: BARBER97</p>
+                </section>
+            </div>
+        </section>
+        <!-- End our-story section -->
+
+        <!-- Start services section -->
+        <section class="services" id="services">
+            <h2>Services</h2>
+            <section class="serv">
+                <div class="container-flex">
+                    <div class="container">
+                        <div class="sub-div">
+                            <p>Hair cut</p>
+                            <p>$36.00</p>
+                        </div>
+                        <img src="images/haircutting1.avif"  alt="hair cut"/>
+                    </div>
+                    <div class="container">
+                        <div class="sub-div">
+                            <p>Washing</p>
+                            <p>$25.00</p>
+                        </div>
+                        <img src="images/washing.jpeg"  alt="washing"/>
+                    </div>
+                    <div class="container">
+                        <div class="sub-div">
+                            <p>Shaves</p>
+                            <p>$30.00</p>
+                        </div>
+                        <img src="images/beardcutting.webp"  alt="beardcutting"/>
+                    </div>
+                    <div class="container">
+                        <div class="sub-div">
+                            <p>Kids</p>
+                            <p>$25.00</p>
+                        </div>
+                        <img src="images/haircuttingkids.webp"  alt="haircuttingkids"/>
+                    </div>
+                </div>
+             </section>
+             <section class="book-a-seat">
+                <div class="alpha-channel">
+                    <div class="bg" id="book-a-seat">
+                        <h2>Book a seat</h2>
+                        <p>Please fill out the form and we get back to you</p>
+                        <form>
+                            <input type="text" name="name" placeholder="Full name" style="margin-right: 25px;" required />
+                            <input type="tel" name="telephone" placeholder="Mobile 010-020-0340" required/>
+                            <input type="text" name="discount" placeholder="Discount" style="margin-right: 25px;"/>
+                            <select name="branch" required>
+                                <option value="Los Angeles">Los Angeles</option>
+                                <option value="Florida">Florida</option>
+                                <option value="Ohio">Ohio</option>
+                            </select>
+                            <input type="email" name="email" style="margin-right: 25px;" placeholder="E-mail" required/>
+                            <input type="number" name="num of people" placeholder="Number of people" min="1" required/>
+                            <textarea name="comment" placeholder="Comment (Optional)"></textarea>
+                            <input type="submit"/>
+                        </form>
+                    </div>
+                </div>
+             </section>
+        </section>
+        <!-- End services section -->
+        <!-- Start price list section -->
+        <section class="price-list" id="price-list">
+            <div class="informations">
+                <h2>Price List</h2>
+                <p class="title-p">Starting at $25</p>
+                <div class="names-prices">
+                    <div class="names">
+                        <p>Haircut<span></span></p>
+                        <p>Beard Trim<span></span></p>
+                        <p>Razor Cut<span></span></p>
+                        <p>Shaves<span></span></p>
+                        <p>Styling / Color<span></span></p>
+                    </div>
+                    <div class="prices">
+                        <p>$36.00</p>
+                        <p>$26.00</p>
+                        <p>$36.00</p>
+                        <p>$30.00</p>
+                        <p>$25.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"></div>
+            </div>
+        </section>
+        <!-- End price list section -->
+        <hr id="contact"/>
+    </main>
+    <!-- End main -->
+    <!-- Start footer -->
+    <footer>
+        <section class="contact">
+            <div class="contact-info">
+                <h2>Contact Informaion</h2>
+                <a href="tel:+491202403600" class="info">(+49)120-240-3600</a>
+                <br/>
+                <a href="mailto:hello@barber.beauty" class="info">hello@barber.beauty</a>
+                <div class="logo">
+                    <a href="#home"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#home"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#home"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#home"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#home"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="background">
+                <div class="date">
+                    <div class="date-info">
+                        <i class="fa-solid fa-store"></i>
+                        <p>OPEN DAILY</p>
+                        <p>10:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83053.73543816047!2d-118.4930205345154!3d34.053583881740764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b8e01b6681d9%3A0x8ae08523c3184667!2sLegends%20The%20Barbershop!5e1!3m2!1sen!2sth!4v1692272940511!5m2!1sen!2sth" 
+            width="400" height="300" style="border:0;" allowfullscreen="" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map"></iframe>
+        </section>
+        <secion class="our-branches">
+            <h2>Our Branches</h2>
+            <div class="branches">
+                <div class="branche">
+                    <h3>Los Angeles</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="branche">
+                    <h3>Florida</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur.</p>
+                </div>
+                <div class="branche">
+                    <h3>Ohio</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Youssef Sameh</p>
+                <a href="#home" title="Back Top"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </secion>
+    </footer>
+    <div class="end"></div>
+    <!-- End footer -->
+</body>
+</html>
