@@ -1171,6 +1171,10 @@ footer .contact .background:hover {
   :root {
     font-size: 18px;
   }
+  
+  iframe {
+    height: 19.44444rem;
+  }
 }
 
 @media (min-width: 1750px) {
@@ -1190,6 +1194,18 @@ footer .contact .background:hover {
     font-size: 25px;
   }
 }
+
+@media (min-width: 3000px) {
+  :root {
+    font-size: 27px;
+  }
+
+  .for-position {
+    right: -5%;
+  }
+}
+
+
 /* Humburger-nav & Overflow */
 @media (max-width: 1022px) {
   :root,
