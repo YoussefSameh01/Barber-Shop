@@ -921,6 +921,11 @@ footer .contact .background:hover {
   background-image: linear-gradient(to right, rgba(255, 196, 0, 0.8), rgba(34, 193, 195, 0.8));
 }
 
+.container {
+  max-width: 3072px;
+  margin: 0 auto;
+}
+
 /* End footer */
 @media (max-width: 1022px) {
   :root {
